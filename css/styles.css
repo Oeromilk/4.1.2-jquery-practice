@@ -1,0 +1,19 @@
+.container {
+  width: 400px;
+  border: 1px solid #4A4147; }
+
+.files, .mail, .cloud, .sign-out {
+  background-color: #585A5E;
+  color: white; }
+
+.files:hover, .mail:hover, .cloud:hover, .sign-out:hover {
+  background-color: #9BC245;
+  color: #585A5E; }
+
+.content {
+  background-color: #E5E5E5; }
+
+.content:hover {
+  background-color: #9BC245; }
+
+/*# sourceMappingURL=styles.css.map */
