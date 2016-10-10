@@ -2,23 +2,16 @@
   $(function(){
     "use strict";
 
-    $(".filesDropDown").hide();
-    $(".mailDropDown").hide();
-    $(".cloudDropDown").hide();
+    $(".dropDown").hide();
 
-    $(".files").click(function(){
-      $(".filesDropDown").slideToggle( 200, function() {
-      });
-    });
+    $(".category").click(function(){
 
-    $(".mail").click(function(){
-      $(".mailDropDown").slideToggle( 200, function(){
-      });
-    });
-
-    $(".cloud").click(function(){
-      $(".cloudDropDown").slideToggle( 200, function(){
-      });
+      if ($(this).next().is(':visible')){
+        $(this).next().hide();
+      } else {
+        $(this).siblings('div').hide();
+        $(this).next().show();
+      }
     });
 
   });
